@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories Hub - Lộ Lộ & Đờn Ca Tài Tử</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .story-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+        }
+
+        .story-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .story-card.lo-lo {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+        }
+
+        .story-card.don-ca {
+            background: linear-gradient(135deg, rgba(139, 69, 19, 0.2) 0%, rgba(210, 105, 30, 0.2) 100%);
+        }
+
+        .story-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .story-card.lo-lo .story-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .story-card.don-ca .story-icon {
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+        }
+
+        .story-title {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .story-description {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .story-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .story-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .features {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .features h3 {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .features-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .feature::before {
+            content: '✓';
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .features-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stories Hub</h1>
+        <p class="subtitle">Khám phá những câu chuyện truyền cảm hứng về văn hóa Việt Nam</p>
+        
+        <div class="stories-grid">
+            <div class="story-card lo-lo" onclick="window.location.href='web-lo-lo/index.html'">
+                <div class="story-icon">🎭</div>
+                <h3 class="story-title">Lộ Lộ</h3>
+                <p class="story-description">
+                    Hành trình truyền cảm hứng từ sân khấu lô tô đến biểu tượng cộng đồng LGBT Việt Nam. 
+                    Khám phá câu chuyện về nghệ sĩ Lộ Lộ và sự đổi mới nghệ thuật lô tô.
+                </p>
+                <a href="web-lo-lo/index.html" class="story-btn">Đọc câu chuyện</a>
+            </div>
+            
+            <div class="story-card don-ca" onclick="window.location.href='web-don-ca-tai-tu/index.html'">
+                <div class="story-icon">🎵</div>
+                <h3 class="story-title">Đờn Ca Tài Tử</h3>
+                <p class="story-description">
+                    Di sản vĩnh cửu của nghệ nhân Đặng Hoàng Linh và Phương Hồng Thắm. 
+                    Tìm hiểu về loại hình âm nhạc được UNESCO công nhận và hành trình bảo tồn văn hóa.
+                </p>
+                <a href="web-don-ca-tai-tu/index.html" class="story-btn">Đọc câu chuyện</a>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h3>Tính năng nổi bật</h3>
+            <div class="features-list">
+                <span class="feature">Trải nghiệm đọc tương tác</span>
+                <span class="feature">Âm nhạc nền tự động</span>
+                <span class="feature">Trợ lý AI thông minh</span>
+                <span class="feature">Thiết kế responsive</span>
+                <span class="feature">Hiệu ứng animation mượt mà</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
