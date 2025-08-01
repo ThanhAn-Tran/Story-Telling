@@ -31,6 +31,12 @@ function initAnimations() {
     
     // Parallax effects
     initParallaxEffects();
+    
+    // Enable audio autoplay after user interaction
+    enableAudioAutoplay();
+
+    // Initialize navigation highlight
+    initNavigationHighlight();
 }
 
 // Hero section animations
