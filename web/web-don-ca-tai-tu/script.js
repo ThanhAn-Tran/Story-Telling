@@ -513,6 +513,27 @@ function addParticleEffects() {
 // Initialize particle effects
 addParticleEffects();
 
+// Enable audio autoplay after user interaction
+function enableAudioAutoplay() {
+    let audioStarted = false;
+    
+    const startAudio = () => {
+        if (!audioStarted) {
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            if (playPauseBtn) {
+                playPauseBtn.click();
+                audioStarted = true;
+            }
+        }
+    };
+    
+    // Listen for user interactions
+    const userInteractions = ['click', 'touchstart', 'scroll', 'keydown'];
+    userInteractions.forEach(event => {
+        document.addEventListener(event, startAudio, { once: true });
+    });
+}
+
 // Handle mobile swipe gestures
 function handleSwipe() {
     let startX = 0;

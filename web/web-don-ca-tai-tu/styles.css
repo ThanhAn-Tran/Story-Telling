@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +73,7 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
-    background: linear-gradient(45deg, #D2691E, #CD853F);
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -93,7 +93,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #CD853F;
+    color: #feca57;
 }
 
 .nav-link::after {
@@ -103,7 +103,7 @@ body {
     left: 0;
     width: 0;
     height: 2px;
-    background: #CD853F;
+    background: #feca57;
     transition: width 0.3s ease;
 }
 
@@ -127,7 +127,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     background-size: 400% 400%;
     animation: gradientShift 8s ease infinite;
 }
@@ -204,12 +204,12 @@ body {
     content: '';
     position: absolute;
     bottom: 0;
-    left: -3px;
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    transform: rotate(45deg);
+    left: -4px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid white;
 }
 
 @keyframes scrollBounce {
@@ -246,7 +246,7 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #CD853F;
+    color: #ff6b6b;
     text-align: center;
 }
 
@@ -254,7 +254,7 @@ body {
     font-size: 1.3rem;
     font-weight: 400;
     margin-bottom: 2rem;
-    color: #D2691E;
+    color: #feca57;
     text-align: center;
 }
 
@@ -278,14 +278,14 @@ body {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #CD853F;
+    color: #ff6b6b;
     text-align: center;
 }
 
 .chapter-subtitle {
     font-size: 1.2rem;
     font-weight: 400;
-    color: #D2691E;
+    color: #feca57;
     text-align: center;
 }
 
@@ -320,7 +320,7 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .subsection-text {
@@ -335,7 +335,7 @@ body {
     max-width: 500px;
     height: auto;
     min-height: 300px;
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -391,17 +391,17 @@ body {
 
 /* Key Quote */
 .key-quote {
-    background: rgba(205, 133, 63, 0.1);
+    background: rgba(255, 107, 107, 0.1);
     padding: 2rem;
     border-radius: 15px;
-    border-left: 4px solid #CD853F;
+    border-left: 4px solid #ff6b6b;
     margin: 2rem 0;
 }
 
 .key-quote blockquote {
     font-size: 1.2rem;
     font-style: italic;
-    color: #CD853F;
+    color: #ff6b6b;
     text-align: center;
     margin: 0;
 }
@@ -415,10 +415,10 @@ body {
 }
 
 .highlight-item {
-    background: rgba(205, 133, 63, 0.1);
+    background: rgba(255, 107, 107, 0.1);
     padding: 1.5rem;
     border-radius: 10px;
-    border-left: 3px solid #CD853F;
+    border-left: 3px solid #ff6b6b;
     transition: transform 0.3s ease;
 }
 
@@ -430,7 +430,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .highlight-item p,
@@ -454,7 +454,7 @@ body {
     content: '▶';
     position: absolute;
     left: 0;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 /* Achievements */
@@ -466,7 +466,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .achievement-list {
@@ -476,10 +476,10 @@ body {
 }
 
 .achievement-item {
-    background: rgba(205, 133, 63, 0.1);
+    background: rgba(255, 107, 107, 0.1);
     padding: 1.5rem;
     border-radius: 10px;
-    border-left: 3px solid #CD853F;
+    border-left: 3px solid #ff6b6b;
     transition: transform 0.3s ease;
 }
 
@@ -491,7 +491,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .achievement-item p {
@@ -501,10 +501,10 @@ body {
 
 /* Key Initiative */
 .key-initiative {
-    background: rgba(205, 133, 63, 0.15);
+    background: rgba(255, 107, 107, 0.15);
     padding: 2rem;
     border-radius: 15px;
-    border-left: 4px solid #CD853F;
+    border-left: 4px solid #ff6b6b;
     margin: 2rem 0;
 }
 
@@ -512,7 +512,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .initiative-text {
@@ -530,7 +530,7 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .impact-list {
@@ -540,10 +540,10 @@ body {
 }
 
 .impact-item {
-    background: rgba(205, 133, 63, 0.1);
+    background: rgba(255, 107, 107, 0.1);
     padding: 1.5rem;
     border-radius: 10px;
-    border-left: 3px solid #CD853F;
+    border-left: 3px solid #ff6b6b;
     transition: transform 0.3s ease;
 }
 
@@ -555,7 +555,7 @@ body {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #CD853F;
+    color: #ff6b6b;
 }
 
 .impact-item p {
@@ -566,7 +566,7 @@ body {
 /* Conclusion Section */
 .conclusion-section {
     text-align: center;
-    background: rgba(205, 133, 63, 0.05);
+    background: rgba(255, 107, 107, 0.05);
     padding: 3rem;
     border-radius: 20px;
     margin-top: 4rem;
@@ -593,7 +593,7 @@ body {
 }
 
 .audio-btn {
-    background: #CD853F;
+    background: #ff6b6b;
     border: none;
     border-radius: 50%;
     width: 40px;
@@ -608,7 +608,7 @@ body {
 }
 
 .audio-btn:hover {
-    background: #D2691E;
+    background: #feca57;
     transform: scale(1.1);
 }
 
@@ -622,7 +622,7 @@ body {
 
 .audio-title {
     font-size: 0.9rem;
-    color: #CD853F;
+    color: #ff6b6b;
     font-weight: 500;
     margin-bottom: 0.5rem;
     display: block;
@@ -642,7 +642,7 @@ body {
 
 .progress-fill {
     height: 100%;
-    background: #CD853F;
+    background: #ff6b6b;
     width: 0%;
     transition: width 0.3s ease;
 }
@@ -748,7 +748,7 @@ body {
 .chatbot-toggle {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -778,7 +778,7 @@ body {
 }
 
 .chatbot-header {
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding: 1rem;
     display: flex;
@@ -844,7 +844,7 @@ body {
 }
 
 .user-message .message-content {
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     border-bottom-right-radius: 5px;
 }
@@ -915,7 +915,7 @@ body {
 }
 
 .chatbot-input input:focus {
-    border-color: #D2691E;
+    border-color: #ff6b6b;
 }
 
 .chatbot-input input::placeholder {
@@ -923,7 +923,7 @@ body {
 }
 
 #chatbot-send {
-    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     border: none;
     border-radius: 50%;
     width: 40px;
