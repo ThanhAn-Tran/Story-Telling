@@ -1,0 +1,113 @@
+{
+    "storyTitle": "Lộ Lộ: Hành Trình Truyền Cảm Hứng Từ Sân Khấu Lô Tô Đến Biểu Tượng Cộng Đồng",
+    "backgroundSound": "/music/background.mp3",
+    "chapters": [
+      {
+        "id": "intro",
+        "title": "Lời Mở Đầu: Lộ Lộ - Nữ Hoàng Lô Tô và Hành Trình Truyền Cảm Hứng",
+        "content": "Lộ Lộ, tên thật Lâm Quốc Khải (sinh năm 1988 tại Kiên Giang), là một nghệ sĩ lô tô nổi tiếng, trưởng đoàn Sài Gòn Tân Thời. Cô không chỉ góp phần hồi sinh nghệ thuật lô tô mà còn là biểu tượng kiên cường của cộng đồng LGBT Việt Nam. Câu chuyện của cô là sự giao thoa giữa nghệ thuật dân gian và hành trình khẳng định bản thân, tạo nên một sức ảnh hưởng mạnh mẽ. Sứ mệnh của cô gắn liền với việc tạo sinh kế cho các ca sĩ chuyển giới, biến câu chuyện cá nhân thành tuyên ngôn về sự chân thật và chấp nhận.",
+        "themes": ["Nghệ thuật lô tô", "Biểu tượng LGBT", "Truyền cảm hứng", "Khẳng định bản thân"],
+        "image": "/images/lo_lo_intro.jpg"
+      },
+      {
+        "id": "chapter-1",
+        "title": "Chương 1: Từ Lâm Quốc Khải Đến Lộ Lộ - Những Bước Chân Đầu Đời",
+        "sections": [
+          {
+            "subtitle": "Tuổi thơ, xuất thân và hành trình mưu sinh",
+            "content": "Sinh ra trong một gia đình nghèo ở Kiên Giang, Lộ Lộ (Lâm Quốc Khải) đã trải qua nhiều công việc lao động chân tay và cả những công việc chuyên môn như giảng viên, marketing, thiết kế. Những trải nghiệm này đã rèn giũa cho cô ý chí kiên cường, khả năng thích nghi và lòng đồng cảm sâu sắc, tạo nền tảng vững chắc cho sự nghiệp nghệ thuật và hoạt động xã hội sau này.",
+            "image": "/images/lo_lo_childhood.jpg"
+          },
+          {
+            "subtitle": "Duyên nợ với lô tô và bước ngoặt định mệnh",
+            "content": "Sau khi tham gia nhiều gameshow truyền hình, Lộ Lộ được danh hài Trấn Thành gợi ý theo đuổi nghề lô tô. Sự đón nhận nồng nhiệt của khán giả trong một lần hát thử ở hội chợ đã thôi thúc cô thành lập Đoàn Lô Tô Sài Gòn Tân Thời, đánh dấu bước ngoặt chuyển mình thành người tiên phong bảo tồn và phát triển nghệ thuật này.",
+            "image": "/images/lo_lo_loto_start.jpg"
+          }
+        ],
+        "key_events": [
+          "Làm nhiều nghề để mưu sinh: nấu ăn, dọn dẹp, phục vụ, giặt ủi.",
+          "Từng là giảng viên và làm marketing.",
+          "Tham gia các cuộc thi: Chuông vàng vọng cổ 2016, Solo cùng Bolero 2018.",
+          "Được Trấn Thành đặt nghệ danh 'Lộ Lộ'."
+        ],
+        "image": "/images/lo_lo_chapter1.jpg"
+      },
+      {
+        "id": "chapter-2",
+        "title": "Chương 2: Sài Gòn Tân Thời - Nơi Khát Vọng Cất Cánh",
+        "sections": [
+          {
+            "subtitle": "Hành trình thành lập và sứ mệnh nhân văn",
+            "content": "Đoàn Lô Tô Sài Gòn Tân Thời ra đời với sứ mệnh không chỉ phát triển nghệ thuật mà còn tạo cuộc sống ổn định cho các ca sĩ chuyển giới. Sự cống hiến của Lộ Lộ đã thu hút được sự đầu tư từ doanh nhân Đỗ Kim Liên trong chương trình Shark Tank Việt Nam, khẳng định giá trị nhân văn mà đoàn mang lại.",
+            "image": "/images/lo_lo_sgtth.jpg"
+          },
+          {
+            "subtitle": "Đổi mới nghệ thuật lô tô",
+            "content": "Lộ Lộ tạo nên sức hút riêng bằng phong cách hô lô tô độc đáo, kết hợp kiến thức từ toán, hóa, lịch sử, địa lý... với sự hài hước, duyên dáng. Cô chú trọng xây dựng hình ảnh chuyên nghiệp, trẻ trung cho đoàn, giúp lô tô tiếp cận nhiều đối tượng khán giả hơn và nâng cao giá trị của loại hình nghệ thuật này.",
+            "image": "/images/lo_lo_innovation.jpg"
+          }
+        ],
+        "highlights": {
+          "slogan": "Sân khấu của sự yêu thương và cơ hội.",
+          "achievements": "Doanh số 4 tỷ đồng (2018), nhận đầu tư 1 tỷ đồng từ Shark Đỗ Kim Liên.",
+          "unique_style_examples": [
+            "Toán học: '7 bình phương là nhiêu mẹ 49'",
+            "Lịch sử: 'Năm Bác ra đi tìm đường cứu nước 1911'",
+            "Hóa học: 'Hydro là nhiêu một'"
+          ]
+        },
+        "image": "/images/lo_lo_chapter2.jpg"
+      },
+      {
+        "id": "chapter-3",
+        "title": "Chương 3: Vượt Qua Giông Bão - Hành Trình Tìm Lại Chính Mình",
+        "sections": [
+          {
+            "subtitle": "Câu chuyện hôn nhân, con cái và sự thức tỉnh giới tính",
+            "content": "Trước khi chuyển giới, Lộ Lộ từng kết hôn và có hai người con. Sau khi nhận ra bản ngã thật sự của mình, cô đã dũng cảm quyết định ly hôn nhưng vẫn nhận trách nhiệm nuôi dưỡng hai con và giữ mối quan hệ văn minh với vợ cũ, thể hiện sự trưởng thành và tình yêu thương gia đình.",
+            "image": "/images/lo_lo_family.jpg"
+          },
+          {
+            "subtitle": "Hành trình chuyển giới và tình yêu mới",
+            "content": "Lộ Lộ chính thức phẫu thuật chuyển giới vào cuối năm 2022. Cô công khai sống thật với giới tính nữ và tìm thấy hạnh phúc bên bạn trai Việt kiều Mỹ. Mối quan hệ được gia đình hai bên ủng hộ, là minh chứng cho một cái kết viên mãn sau hành trình đầy thử thách.",
+            "image": "/images/lo_lo_transition.jpg"
+          }
+        ],
+        "timeline": [
+          {"time": "Trước đây", "event": "Kết hôn và có 2 con"},
+          {"time": "Cuối năm 2022", "event": "Chính thức phẫu thuật chuyển giới"},
+          {"time": "Tháng 9/2023", "event": "Được bạn trai cầu hôn"},
+          {"time": "Hiện tại", "event": "Sống hạnh phúc và dự định kết hôn"}
+        ],
+        "image": "/images/lo_lo_chapter3.jpg"
+      },
+      {
+        "id": "chapter-4",
+        "title": "Chương 4: Dấu Ấn Lộ Lộ Trên Sân Khấu và Cộng Đồng",
+        "sections": [
+          {
+            "subtitle": "Những màn trình diễn đáng nhớ",
+            "content": "Từ sân khấu Solo cùng Bolero 2018, nơi Lộ Lộ dũng cảm kể câu chuyện giới tính của mình qua bài hát, đến quyết tâm tham gia Hoa hậu Chuyển giới Việt Nam 2025, cô luôn sử dụng nghệ thuật như một phương tiện mạnh mẽ để truyền tải thông điệp về sự chân thật, phá vỡ định kiến và truyền cảm hứng.",
+            "image": "/images/lo_lo_performance.jpg"
+          },
+          {
+            "subtitle": "Vai trò biểu tượng cho cộng đồng LGBT",
+            "content": "Câu chuyện cuộc đời và sự nghiệp của Lộ Lộ đã trở thành nguồn cảm hứng lớn lao cho cộng đồng LGBT. Cô không chỉ sống thật với bản thân mà còn tích cực hành động, tạo ra những thay đổi thiết thực để cải thiện đời sống và mang lại cái nhìn thấu hiểu hơn của xã hội đối với cộng đồng.",
+            "image": "/images/lo_lo_lgbt_icon.jpg"
+          }
+        ],
+        "key_performances": [
+          "Á quân Solo cùng Bolero 2018: Màn trình diễn 'Ai cho tôi tình yêu' kể câu chuyện giới tính của mình.",
+          "Hoa hậu Chuyển giới Việt Nam 2025: Nỗ lực giảm cân, rèn luyện để giành vương miện và truyền cảm hứng."
+        ],
+        "image": "/images/lo_lo_chapter4.jpg"
+      },
+      {
+        "id": "chapter-5",
+        "title": "Chương 5: Lô Tô Việt Nam - Di Sản và Tương Lai Cùng Lộ Lộ",
+        "content": "Lô tô, có nguồn gốc từ bingo, đã trở thành một phần của văn hóa dân gian miền Nam Việt Nam, là không gian biểu diễn và mưu sinh của cộng đồng LGBT. Lộ Lộ đã đóng vai trò then chốt trong việc hồi sinh và hiện đại hóa lô tô. Bằng cách công khai sống với danh tính thật và đổi mới nghệ thuật, cô đã tạo ra một mối quan hệ cộng sinh: hành trình cá nhân của cô song hành với sự tái sinh của lô tô, biến loại hình nghệ thuật này trở thành một tiếng nói mạnh mẽ cho sự kiên cường, hòa nhập và đa dạng trong xã hội hiện đại.",
+        "themes": ["Di sản văn hóa", "Bảo tồn và phát triển", "Tác động xã hội", "Hiện đại hóa nghệ thuật truyền thống"],
+        "image": "/images/lo_lo_chapter5.jpg"
+      }
+    ]
+  }
