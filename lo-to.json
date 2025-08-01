@@ -6,7 +6,6 @@
         "id": "intro",
         "title": "Lời Mở Đầu: Lộ Lộ - Nữ Hoàng Lô Tô và Hành Trình Truyền Cảm Hứng",
         "content": "Lộ Lộ, tên thật Lâm Quốc Khải (sinh năm 1988 tại Kiên Giang), là một nghệ sĩ lô tô nổi tiếng, trưởng đoàn Sài Gòn Tân Thời. Cô không chỉ góp phần hồi sinh nghệ thuật lô tô mà còn là biểu tượng kiên cường của cộng đồng LGBT Việt Nam. Câu chuyện của cô là sự giao thoa giữa nghệ thuật dân gian và hành trình khẳng định bản thân, tạo nên một sức ảnh hưởng mạnh mẽ. Sứ mệnh của cô gắn liền với việc tạo sinh kế cho các ca sĩ chuyển giới, biến câu chuyện cá nhân thành tuyên ngôn về sự chân thật và chấp nhận.",
-        "themes": ["Nghệ thuật lô tô", "Biểu tượng LGBT", "Truyền cảm hứng", "Khẳng định bản thân"],
         "image": "/images/lo_lo_intro.jpg"
       },
       {
@@ -106,7 +105,6 @@
         "id": "chapter-5",
         "title": "Chương 5: Lô Tô Việt Nam - Di Sản và Tương Lai Cùng Lộ Lộ",
         "content": "Lô tô, có nguồn gốc từ bingo, đã trở thành một phần của văn hóa dân gian miền Nam Việt Nam, là không gian biểu diễn và mưu sinh của cộng đồng LGBT. Lộ Lộ đã đóng vai trò then chốt trong việc hồi sinh và hiện đại hóa lô tô. Bằng cách công khai sống với danh tính thật và đổi mới nghệ thuật, cô đã tạo ra một mối quan hệ cộng sinh: hành trình cá nhân của cô song hành với sự tái sinh của lô tô, biến loại hình nghệ thuật này trở thành một tiếng nói mạnh mẽ cho sự kiên cường, hòa nhập và đa dạng trong xã hội hiện đại.",
-        "themes": ["Di sản văn hóa", "Bảo tồn và phát triển", "Tác động xã hội", "Hiện đại hóa nghệ thuật truyền thống"],
         "image": "/images/lo_lo_chapter5.jpg"
       }
     ]
