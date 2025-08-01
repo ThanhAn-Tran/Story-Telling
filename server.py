@@ -40,7 +40,7 @@ def main():
         print("-" * 50)
         
         # Open browser
-        webbrowser.open(f'http://localhost:{PORT}')
+        webbrowser.open(f'http://localhost:{PORT}/web/')
         
         try:
             # Start server
