@@ -44,10 +44,6 @@ Server sẽ chạy tại địa chỉ: [http://localhost:8000/web/](http://local
   ```js
   const apiKey = 'your-api-key';
   ```
-  hoặc
-  ```js
-  const apiKey = 'sk-...';
-  ```
 - Thay `'your-api-key'` hoặc key mẫu bằng API key bạn vừa lấy.
 
 **Lưu ý:**  
