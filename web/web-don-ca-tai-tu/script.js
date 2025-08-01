@@ -306,7 +306,7 @@ function initAudioPlayer() {
     // Create audio element
     function createAudio() {
         audio = new Audio();
-        audio.src = '../../audio/audio lộ lộ/547f7783-3392-4d80-b893-1d18d73e3227.mp3';
+        audio.src = '../../audio/đờn ca tài tử/6864237346381.mp3';
         audio.loop = true;
         
         audio.addEventListener('timeupdate', () => {
