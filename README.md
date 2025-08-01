@@ -1,25 +1,36 @@
-# Story-Telling Website
+# 📖 Website Kể Chuyện và Tương Tác với AI
 
-Website kể chuyện tương tác với chatbot AI về hai chủ đề:
+Website kể chuyện tương tác bằng chatbot AI về hai chủ đề văn hóa Việt Nam:
 - **Đờn ca tài tử**
 - **Lô tô**
 
-## Tính năng
+Người dùng có thể trò chuyện với chatbot để khám phá các câu chuyện, hình ảnh, và âm thanh đặc sắc liên quan đến từng chủ đề.
 
-- Chatbot AI trả lời về từng chủ đề bằng tiếng Việt.
-- Giao diện web hiện đại, dễ sử dụng.
-- Tích hợp audio, hình ảnh minh họa.
+---
 
-## Hướng dẫn cài đặt & chạy
+## 🎯 Tính Năng
 
-### 1. Yêu cầu
+- Chatbot AI hiểu tiếng Việt, trả lời theo từng chủ đề.
+- Giao diện hiện đại, hỗ trợ hình ảnh và âm thanh minh họa.
+- Dễ sử dụng, không cần cài đặt phức tạp.
+- Hỗ trợ trên các trình duyệt phổ biến (Chrome, Edge, Firefox...).
+
+---
+
+## 🎥 Video Demo
+
+👉 [Xem video demo tại đây](https://drive.google.com/file/d/17fQ7giZWfamFzdqUmlyX7UZ1eqBLQxNn/view?usp=sharing)
+
+---
+
+## 🚀 Cài Đặt & Sử Dụng
+
+### 1. Yêu Cầu
 
 - Python 3.x
-- Trình duyệt web hiện đại (Chrome, Edge, Firefox...)
+- Trình duyệt hiện đại
 
-### 2. Chạy server
-
-Mở terminal/cmd, di chuyển vào thư mục project và chạy:
+### 2. Chạy Server
 
 ```bash
 python server.py
