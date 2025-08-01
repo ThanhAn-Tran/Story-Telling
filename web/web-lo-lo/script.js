@@ -15,26 +15,29 @@ window.addEventListener('load', () => {
     });
 });
 
-// Initialize all animations
-function initAnimations() {
-    // Hero section animations
-    animateHero();
-    
-    // Story section animations
-    animateStorySections();
-    
-    // Timeline animations
-    animateTimeline();
-    
-    // Audio player functionality
-    initAudioPlayer();
-    
-    // Smooth scrolling for navigation
-    initSmoothScrolling();
-    
-    // Parallax effects
-    initParallaxEffects();
-}
+    // Initialize all animations
+    function initAnimations() {
+        // Hero section animations
+        animateHero();
+        
+        // Story section animations
+        animateStorySections();
+        
+        // Timeline animations
+        animateTimeline();
+        
+        // Audio player functionality
+        initAudioPlayer();
+        
+        // Smooth scrolling for navigation
+        initSmoothScrolling();
+        
+        // Parallax effects
+        initParallaxEffects();
+        
+        // Enable audio autoplay after user interaction
+        enableAudioAutoplay();
+    }
 
 // Hero section animations
 function animateHero() {
@@ -322,6 +325,15 @@ function initAudioPlayer() {
             // Fallback to simulated audio
             isPlaying = true;
             simulateAudioProgress();
+        });
+        
+        // Auto-play audio when page loads
+        audio.play().then(() => {
+            isPlaying = true;
+            updatePlayButton();
+        }).catch(error => {
+            console.log('Auto-play failed:', error);
+            // User interaction required for autoplay in modern browsers
         });
     }
     
@@ -618,4 +630,25 @@ function handleSwipe() {
             });
         }
     }
+}
+
+// Enable audio autoplay after user interaction
+function enableAudioAutoplay() {
+    let audioStarted = false;
+    
+    const startAudio = () => {
+        if (!audioStarted) {
+            const playPauseBtn = document.getElementById('play-pause-btn');
+            if (playPauseBtn) {
+                playPauseBtn.click();
+                audioStarted = true;
+            }
+        }
+    };
+    
+    // Listen for user interactions
+    const userInteractions = ['click', 'touchstart', 'scroll', 'keydown'];
+    userInteractions.forEach(event => {
+        document.addEventListener(event, startAudio, { once: true });
+    });
 }
