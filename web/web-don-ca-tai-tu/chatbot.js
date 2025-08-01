@@ -5,10 +5,6 @@ class ChatbotWidget {
         this.messages = [];
         this.suggestions = [
             "Kể cho tôi về Đặng Hoàng Linh",
-            "Phương Hồng Thắm là ai?",
-            "Đờn ca tài tử là gì?",
-            "Lớp học miễn phí như thế nào?",
-            "Di sản văn hóa UNESCO"
         ];
         this.init();
     }
@@ -203,16 +199,10 @@ class ChatbotWidget {
     async callOpenAI(message) {
         // This is a placeholder for OpenAI API integration
         // Replace with actual API call
-        const apiKey = 'your-openai-api-key-here'; // User will replace this
+        const apiKey = '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'; // User will replace this
         
         // Simulate API response based on message content
         const responses = {
-            'đặng hoàng linh': 'Nghệ nhân ưu tú Đặng Hoàng Linh (Sáu Lơn) là một bậc thầy về Đờn ca tài tử. Sinh ra tại An Giang, ông đã được bao bọc bởi những giai điệu Đờn ca tài tử từ nhỏ. Ông thành thạo nhiều loại nhạc cụ truyền thống (Ngũ Tuyệt) và là nhà soạn nhạc, viết lời tài hoa.',
-            'phương hồng thắm': 'Nghệ nhân Nhân dân Phương Hồng Thắm là vợ của Đặng Hoàng Linh, sở hữu giọng ca "ngọt ngào, truyền cảm". Bà đã đạt nhiều huy chương vàng, bạc và sáng tác hơn 20 tác phẩm nhạc tài tử, khẳng định vị thế của một nghệ sĩ sáng tạo.',
-            'đờn ca tài tử': 'Đờn ca tài tử là một loại hình âm nhạc thính phòng độc đáo của miền Nam Việt Nam, được UNESCO công nhận là Di sản văn hóa phi vật thể đại diện của nhân loại. Nó là một phần không thể thiếu trong đời sống tinh thần của người dân Nam Bộ.',
-            'lớp học miễn phí': 'Năm 2017, hai nghệ nhân thành lập lớp dạy Đờn ca tài tử miễn phí cho thiếu nhi tại An Giang, đặc biệt ưu tiên trẻ em nghèo, mồ côi. Họ không chỉ dạy kỹ thuật mà còn giáo dục về đạo đức, lối sống và giá trị nhân văn.',
-            'unesco': 'Đờn ca tài tử được UNESCO công nhận là Di sản văn hóa phi vật thể đại diện của nhân loại. Đây là sự ghi nhận quan trọng về giá trị văn hóa độc đáo của loại hình nghệ thuật này trong việc bảo tồn và phát triển văn hóa dân tộc.',
-            'di sản': 'Đờn ca tài tử là di sản văn hóa quý báu của Việt Nam, thể hiện sự tinh hoa âm nhạc dân tộc. Hai nghệ nhân Đặng Hoàng Linh và Phương Hồng Thắm đã cống hiến cả cuộc đời để gìn giữ và truyền dạy di sản này cho thế hệ trẻ.'
         };
         
         // Simulate API delay
