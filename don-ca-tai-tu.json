@@ -1,0 +1,81 @@
+{
+    "storyTitle": "Giai Điệu Của Sự Tận Hiến: Di Sản Vĩnh Cửu Của Nghệ Nhân Đặng Hoàng Linh Và Phương Hồng Thắm Trong Đờn Ca Tài Tử",
+    "chapters": [
+      {
+        "id": "intro",
+        "title": "Lời Giới Thiệu: Âm Vang Hồn Hậu Của Miền Nam Việt Nam",
+        "content": "Đờn ca tài tử là một loại hình âm nhạc thính phòng độc đáo của miền Nam Việt Nam, được UNESCO công nhận là Di sản văn hóa phi vật thể đại diện của nhân loại. Nó là một phần không thể thiếu trong đời sống tinh thần của người dân Nam Bộ. Câu chuyện này tôn vinh cặp vợ chồng nghệ nhân đã cống hiến cả cuộc đời cho nghệ thuật này: Nghệ nhân ưu tú Đặng Hoàng Linh (Sáu Lơn) và Nghệ nhân Nhân dân Phương Hồng Thắm, những người đã âm thầm gìn giữ và truyền dạy di sản quý báu này.",
+        "key_figures": [
+          "Nghệ nhân ưu tú Đặng Hoàng Linh (Sáu Lơn)",
+          "Nghệ nhân Nhân dân Phương Hồng Thắm"
+        ]
+      },
+      {
+        "id": "chapter-1",
+        "title": "Chương 1: Cội Nguồn Của Một Bậc Thầy: Hành Trình Tuổi Thơ Của Đặng Hoàng Linh",
+        "sections": [
+          {
+            "subtitle": "Sinh Ra Trong Giai Điệu",
+            "content": "Sinh ra tại An Giang, tuổi thơ của nghệ nhân Đặng Hoàng Linh đã được bao bọc bởi những giai điệu Đờn ca tài tử. Chính tiếng đàn của cha đã gieo vào lòng ông một niềm đam mê sâu sắc, khiến những giai điệu ấy thấm vào máu thịt và trở thành nền tảng cho sự nghiệp sau này."
+          },
+          {
+            "subtitle": "Mối Giao Cảm Không Thể Tách Rời",
+            "content": "Đối với ông, Đờn ca tài tử không phải là một nghề nghiệp mà là 'người bạn tri kỷ' và 'món ăn tinh thần' không thể thiếu. Mối liên kết sâu sắc này là động lực chính cho sự tận hiến trọn đời của ông với nghệ thuật."
+          }
+        ],
+        "key_quotes": "Khi còn nhỏ, mỗi lần nghe ba tôi gảy đờn, lòng tôi lại xao xuyến, mê mẩn lạ thường. Những giai điệu ấy như thấm vào máu thịt, nuôi dưỡng tâm hồn tôi suốt những năm tháng tuổi thơ."
+      },
+      {
+        "id": "chapter-2",
+        "title": "Chương 2: Âm Nhạc Là Vũ Khí: Giai Điệu Của Người Chiến Sĩ",
+        "content": "Trong thời kỳ kháng chiến chống Mỹ, nghệ nhân Đặng Hoàng Linh tham gia Đoàn văn công An Giang, nơi các nghệ sĩ 'vừa diễn, vừa chiến đấu'. Tiếng đờn lời ca đã trở thành một 'vũ khí tinh thần' mạnh mẽ, tiếp thêm sức mạnh cho đồng bào và chiến sĩ. Trải nghiệm này đã gắn kết tình yêu nghệ thuật của ông với niềm tự hào dân tộc và ký ức lịch sử.",
+      },
+      {
+        "id": "chapter-3",
+        "title": "Chương 3: Bản Giao Hưởng Của Tài Năng: Sự Tinh Hoa Nghệ Thuật Và Những Ghi Nhận",
+        "content": "Tài năng của Đặng Hoàng Linh không chỉ dừng lại ở việc biểu diễn điêu luyện nhiều loại nhạc cụ truyền thống (Ngũ Tuyệt). Ông còn là một nhà soạn nhạc và viết lời tài hoa, sáng tạo ra nhiều tác phẩm mới, góp phần làm phong phú kho tàng Đờn ca tài tử. Sự cống hiến của ông đã được ghi nhận bằng vô số huy chương vàng và danh hiệu cao quý.",
+        "highlights": ["Thành thạo nhiều nhạc cụ", "Sáng tác và viết lời mới", "Đạt nhiều giải thưởng danh giá"]
+      },
+      {
+        "id": "chapter-4",
+        "title": "Chương 4: Song Ca Hòa Hợp: Phương Hồng Thắm, Giọng Ca Của Phương Nam",
+        "content": "Đồng hành cùng ông là vợ, Nghệ nhân Nhân dân Phương Hồng Thắm, người sở hữu giọng ca 'ngọt ngào, truyền cảm'. Mối quan hệ của họ là một sự hợp tác nghệ thuật sâu sắc, biểu trưng cho sự hòa quyện của 'đờn' và 'ca'. Bà cũng là một nghệ sĩ tài năng với nhiều giải thưởng lớn và đã sáng tác hơn 20 tác phẩm nhạc tài tử, khẳng định vị thế của một nghệ sĩ sáng tạo.",
+        "key_figure_focus": "Nghệ nhân Nhân dân Phương Hồng Thắm",
+        "achievements": ["Giọng ca truyền cảm", "Đạt nhiều huy chương vàng, bạc", "Sáng tác hơn 20 tác phẩm"]
+      },
+      {
+        "id": "chapter-5",
+        "title": "Chương 5: Trao Ngọn Lửa: Nuôi Dưỡng Tương Lai Của Đờn Ca Tài Tử",
+        "sections": [
+          {
+            "subtitle": "Nỗi Trăn Trở và Quyết Tâm",
+            "content": "Trước nguy cơ Đờn ca tài tử bị mai một trong xã hội hiện đại, hai nghệ nhân mang nặng nỗi trăn trở và quyết tâm 'truyền lửa' cho thế hệ trẻ."
+          },
+          {
+            "subtitle": "Lớp Học Miễn Phí",
+            "content": "Năm 2017, họ thành lập lớp dạy Đờn ca tài tử miễn phí cho thiếu nhi tại An Giang, đặc biệt ưu tiên trẻ em nghèo, mồ côi. Đây là hành động chiến lược và đầy lòng nhân ái để gỡ bỏ rào cản kinh tế, bảo tồn di sản."
+          },
+          {
+            "subtitle": "Triết Lý Giảng Dạy Toàn Diện",
+            "content": "Họ không chỉ dạy kỹ thuật mà còn giáo dục về đạo đức, lối sống và giá trị nhân văn, với mong muốn học trò 'không chỉ biết hát, biết đàn, mà còn biết sống đẹp, sống có ích'."
+          },
+          {
+            "subtitle": "Vượt Qua Nghịch Cảnh",
+            "content": "Dù đối mặt với khó khăn tài chính, thậm chí phải bán nhà, họ vẫn kiên trì với sứ mệnh. Niềm vui từ tiếng đàn, tiếng hát của học trò là động lực lớn nhất giúp họ vượt qua mọi gian nan."
+          }
+        ],
+        "key_initiative": "Thành lập lớp Đờn ca tài tử miễn phí cho trẻ em nghèo từ năm 2017."
+      },
+      {
+        "id": "chapter-6",
+        "title": "Chương 6: Di Sản Vang Vọng: Tác Động Bền Vững",
+        "content": "Sự tận hiến của hai nghệ nhân đã gặt hái thành quả khi đào tạo thành công hơn 200 học trò, nhiều em đã trở thành những đại diện sáng giá cho tương lai của Đờn ca tài tử. Bằng việc tích cực tham gia các hoạt động cộng đồng, họ đã củng cố vị trí vững chắc của nghệ thuật này trong lòng xã hội, tạo ra một hệ sinh thái tự duy trì cho di sản. Họ là biểu tượng của niềm đam mê và quyết tâm gìn giữ văn hóa truyền thống Việt Nam.",
+        "impact": ["Đào tạo hơn 200 nghệ sĩ trẻ", "Lan tỏa nghệ thuật trong cộng đồng", "Xây dựng thế hệ kế cận"]
+      },
+      {
+        "id": "conclusion",
+        "title": "Kết Luận: Giai Điệu Tận Hiến Không Bao Giờ Phai",
+        "content": "Câu chuyện về nghệ nhân Đặng Hoàng Linh và Phương Hồng Thắm là một bản hùng ca về sự tận hiến, hy sinh và tình yêu vô bờ bến cho Đờn ca tài tử. Họ đã cống hiến cả cuộc đời để giữ cho ngọn lửa nghệ thuật không chỉ tồn tại mà còn bùng cháy mạnh mẽ trong các thế hệ tương lai. Di sản của họ không chỉ nằm ở những nốt nhạc mà còn ở những giá trị nhân văn và một thế hệ nghệ sĩ trẻ đầy đam mê, đảm bảo những giai điệu của dân tộc sẽ còn vang vọng mãi.",
+      }
+    ]
+  }
