@@ -1,4 +1,4 @@
-// Floating Chatbot Widget for Đờn Ca Tài Tử
+// Floating Chatbot Widget
 class ChatbotWidget {
     constructor() {
         this.isOpen = false;
@@ -36,7 +36,7 @@ class ChatbotWidget {
                 <div class="chatbot-messages" id="chatbot-messages">
                     <div class="message bot-message">
                         <div class="message-content">
-                            <p>Xin chào! Tôi là trợ lý AI, có thể giúp gì cho bạn về câu chuyện Đờn Ca Tài Tử không?</p>
+                            <p>Xin chào! Tôi là trợ lý AI, có thể giúp gì cho bạn về câu chuyện Đặng Hoàng Linh không?</p>
                         </div>
                         <div class="message-time">Bây giờ</div>
                     </div>
@@ -197,27 +197,62 @@ class ChatbotWidget {
     }
 
     async callOpenAI(message) {
-        // This is a placeholder for OpenAI API integration
-        // Replace with actual API call
+        // OpenAI API integration
         const apiKey = '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'; // User will replace this
         
-        // Simulate API response based on message content
-        const responses = {
-        };
+        // Context about Lộ Lộ for the AI
+        const context = `Sinh ra tại An Giang, tuổi thơ của nghệ nhân Đặng Hoàng Linh đã được bao bọc bởi những giai điệu Đờn ca tài tử. Chính tiếng đàn của cha đã gieo vào lòng ông một niềm đam mê sâu sắc, khiến những giai điệu ấy thấm vào máu thịt và trở thành nền tảng cho sự nghiệp sau này.`;
         
-        // Simulate API delay
-        await new Promise(resolve => setTimeout(resolve, 1000 + Math.random() * 2000));
-        
-        // Find best matching response
-        const lowerMessage = message.toLowerCase();
-        for (const [key, response] of Object.entries(responses)) {
-            if (lowerMessage.includes(key)) {
-                return response;
+        try {
+            const response = await fetch('https://api.openai.com/v1/chat/completions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${apiKey}`
+                },
+                body: JSON.stringify({
+                    model: 'gpt-3.5-turbo',
+                    messages: [
+                        {
+                            role: 'system',
+                            content: `Bạn là một trợ lý AI thân thiện, chuyên gia về câu chuyện của Đặng Hoàng Lâm. Hãy trả lời bằng tiếng Việt một cách tự nhiên và hữu ích. ${context}`
+                        },
+                        {
+                            role: 'user',
+                            content: message
+                        }
+                    ],
+                    max_tokens: 300,
+                    temperature: 0.7
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
+            
+            const data = await response.json();
+            return data.choices[0].message.content;
+            
+        } catch (error) {
+            console.error('OpenAI API error:', error);
+            
+            // Fallback responses if API fails
+            const fallbackResponses = {
+                'đặng hoàng lâm': 'Đặng Hoàng Lâm là một nghệ sĩ Đờn ca tài tử nổi tiếng, trưởng đoàn Đờn ca tài tử.',
+            };
+            
+            // Find best matching response
+            const lowerMessage = message.toLowerCase();
+            for (const [key, response] of Object.entries(fallbackResponses)) {
+                if (lowerMessage.includes(key)) {
+                    return response;
+                }
+            }
+            
+            // Default response
+            return 'Cảm ơn bạn đã hỏi! Đặng Hoàng Lâm là một nghệ sĩ Đờn ca tài tử nổi tiếng. Bạn có muốn biết thêm về câu chuyện của bác ấy không?';
         }
-        
-        // Default response
-        return 'Cảm ơn bạn đã hỏi! Đờn ca tài tử là di sản văn hóa quý báu của Việt Nam. Bạn có muốn biết thêm về nghệ nhân Đặng Hoàng Linh và Phương Hồng Thắm không?';
     }
 
     showTypingIndicator() {
@@ -259,7 +294,7 @@ class ChatbotWidget {
 
     loadMessages() {
         // Load messages from localStorage if available
-        const savedMessages = localStorage.getItem('chatbot-messages-don-ca');
+        const savedMessages = localStorage.getItem('chatbot-messages');
         if (savedMessages) {
             this.messages = JSON.parse(savedMessages);
         }
@@ -267,7 +302,7 @@ class ChatbotWidget {
 
     saveMessages() {
         // Save messages to localStorage
-        localStorage.setItem('chatbot-messages-don-ca', JSON.stringify(this.messages));
+        localStorage.setItem('chatbot-messages', JSON.stringify(this.messages));
     }
 }
 

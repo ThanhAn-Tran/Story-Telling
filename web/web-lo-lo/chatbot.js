@@ -198,7 +198,7 @@ class ChatbotWidget {
 
     async callOpenAI(message) {
         // OpenAI API integration
-        const apiKey = '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'; // User will replace this
+        const apiKey = 'your-api-key'; // User will replace this
         
         // Context about Lộ Lộ for the AI
         const context = `Lộ Lộ (tên thật Lâm Quốc Khải, sinh năm 1988 tại Kiên Giang) là một nghệ sĩ lô tô nổi tiếng, trưởng đoàn Sài Gòn Tân Thời. Cô không chỉ góp phần hồi sinh nghệ thuật lô tô mà còn là biểu tượng kiên cường của cộng đồng LGBT Việt Nam. Lộ Lộ chính thức phẫu thuật chuyển giới vào cuối năm 2022 và công khai sống thật với giới tính nữ. Đoàn Sài Gòn Tân Thời đã đạt doanh số 4 tỷ đồng (2018) và nhận đầu tư 1 tỷ đồng từ Shark Đỗ Kim Liên. Lô tô là một loại hình nghệ thuật dân gian miền Nam Việt Nam, có nguồn gốc từ bingo.`;

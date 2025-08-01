@@ -322,7 +322,47 @@ function animateStorySections() {
         }
     });
 }
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // --- 1. Ẩn màn hình tải trang ---
+    const loadingScreen = document.getElementById('loading-screen');
+    
+    // Đảm bảo trang đã tải xong mọi thứ (ảnh, font...) mới ẩn đi
+    window.addEventListener('load', () => {
+        gsap.to(loadingScreen, { 
+            duration: 0.5, 
+            opacity: 0, 
+            onComplete: () => {
+                loadingScreen.style.display = 'none';
+            }
+        });
+    });
 
+    // --- 2. Kích hoạt hiệu ứng cho các section khi cuộn ---
+    // Đăng ký plugin ScrollTrigger của GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hiệu ứng cho từng section khi cuộn tới
+    gsap.utils.toArray('.story-section').forEach(section => {
+        gsap.fromTo(section, 
+            { 
+                opacity: 0, 
+                y: 50 // Bắt đầu từ vị trí thấp hơn 50px
+            }, 
+            {
+                opacity: 1,
+                y: 0,    // Di chuyển về vị trí gốc
+                duration: 1,
+                scrollTrigger: {
+                    trigger: section,
+                    start: 'top 80%', // Bắt đầu khi đỉnh section cách đỉnh viewport 80%
+                    toggleActions: 'play none none none'
+                }
+            }
+        );
+    });
+
+});
 // Audio player functionality
 function initAudioPlayer() {
     const playPauseBtn = document.getElementById('play-pause-btn');
