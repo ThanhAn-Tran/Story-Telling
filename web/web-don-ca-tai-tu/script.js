@@ -4,19 +4,41 @@ gsap.registerPlugin(ScrollTrigger);
 // Loading Screen
 window.addEventListener('load', () => {
     const loadingScreen = document.getElementById('loading-screen');
-    gsap.to(loadingScreen, {
-        opacity: 0,
-        duration: 1,
-        ease: 'power2.out',
-        onComplete: () => {
-            loadingScreen.style.display = 'none';
-            initAnimations();
-        }
-    });
+    if (loadingScreen) {
+        gsap.to(loadingScreen, {
+            opacity: 0,
+            duration: 1,
+            ease: 'power2.out',
+            onComplete: () => {
+                loadingScreen.style.display = 'none';
+                initAnimations();
+            }
+        });
+    } else {
+        // If loading screen doesn't exist, initialize animations immediately
+        initAnimations();
+    }
 });
+
+// Fallback: If load event doesn't fire, initialize after a delay
+setTimeout(() => {
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle && !heroTitle.style.opacity) {
+        console.log('Fallback: Initializing animations after timeout');
+        initAnimations();
+    }
+    
+    // Also hide loading screen as fallback
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen && loadingScreen.style.display !== 'none') {
+        loadingScreen.style.display = 'none';
+    }
+}, 2000);
 
 // Initialize all animations
 function initAnimations() {
+    console.log('Initializing animations...');
+    
     // Hero section animations
     animateHero();
     
@@ -37,6 +59,8 @@ function initAnimations() {
 
     // Initialize navigation highlight
     initNavigationHighlight();
+    
+    console.log('Animations initialized successfully');
 }
 
 // Hero section animations
@@ -302,21 +326,25 @@ function animateStorySections() {
 // Audio player functionality
 function initAudioPlayer() {
     const playPauseBtn = document.getElementById('play-pause-btn');
+    if (!playPauseBtn) return;
+    
     const playIcon = playPauseBtn.querySelector('.play-icon');
     const pauseIcon = playPauseBtn.querySelector('.pause-icon');
     const progressFill = document.querySelector('.progress-fill');
     
     let isPlaying = false;
     let audio = null;
+    let simulatedProgress = null;
     
     // Create audio element
     function createAudio() {
         audio = new Audio();
         audio.src = '../../audio/đờn ca tài tử/6864237346381.mp3';
         audio.loop = true;
+        audio.preload = 'auto';
         
         audio.addEventListener('timeupdate', () => {
-            if (audio.duration) {
+            if (audio.duration && !isNaN(audio.duration)) {
                 const progress = (audio.currentTime / audio.duration) * 100;
                 progressFill.style.width = progress + '%';
             }
@@ -333,6 +361,10 @@ function initAudioPlayer() {
             isPlaying = true;
             simulateAudioProgress();
         });
+        
+        audio.addEventListener('canplaythrough', () => {
+            console.log('Audio loaded successfully');
+        });
     }
     
     function updatePlayButton() {
@@ -345,33 +377,16 @@ function initAudioPlayer() {
         }
     }
     
-    playPauseBtn.addEventListener('click', () => {
-        if (!audio) {
-            createAudio();
-        }
-        
-        if (isPlaying) {
-            audio.pause();
-            isPlaying = false;
-        } else {
-            audio.play().then(() => {
-                isPlaying = true;
-            }).catch(error => {
-                console.log('Audio play failed:', error);
-                // Create a fake audio experience for demo
-                isPlaying = true;
-                simulateAudioProgress();
-            });
-        }
-        
-        updatePlayButton();
-    });
-    
     function simulateAudioProgress() {
+        if (simulatedProgress) {
+            clearInterval(simulatedProgress);
+        }
+        
         let progress = 0;
-        const interval = setInterval(() => {
+        simulatedProgress = setInterval(() => {
             if (!isPlaying) {
-                clearInterval(interval);
+                clearInterval(simulatedProgress);
+                simulatedProgress = null;
                 return;
             }
             progress += 0.5;
@@ -379,6 +394,40 @@ function initAudioPlayer() {
             progressFill.style.width = progress + '%';
         }, 1000);
     }
+    
+    playPauseBtn.addEventListener('click', () => {
+        if (!audio) {
+            createAudio();
+        }
+        
+        if (isPlaying) {
+            if (audio && !audio.paused) {
+                audio.pause();
+            }
+            if (simulatedProgress) {
+                clearInterval(simulatedProgress);
+                simulatedProgress = null;
+            }
+            isPlaying = false;
+        } else {
+            if (audio) {
+                audio.play().then(() => {
+                    isPlaying = true;
+                }).catch(error => {
+                    console.log('Audio play failed:', error);
+                    // Create a fake audio experience for demo
+                    isPlaying = true;
+                    simulateAudioProgress();
+                });
+            } else {
+                // If audio creation failed, use simulation
+                isPlaying = true;
+                simulateAudioProgress();
+            }
+        }
+        
+        updatePlayButton();
+    });
 }
 
 // Smooth scrolling for navigation
@@ -521,17 +570,30 @@ function enableAudioAutoplay() {
         if (!audioStarted) {
             const playPauseBtn = document.getElementById('play-pause-btn');
             if (playPauseBtn) {
+                // Try to start audio with user gesture
                 playPauseBtn.click();
                 audioStarted = true;
+                
+                // Remove event listeners after first interaction
+                userInteractions.forEach(event => {
+                    document.removeEventListener(event, startAudio);
+                });
             }
         }
     };
     
     // Listen for user interactions
-    const userInteractions = ['click', 'touchstart', 'scroll', 'keydown'];
+    const userInteractions = ['click', 'touchstart', 'scroll', 'keydown', 'mousedown'];
     userInteractions.forEach(event => {
         document.addEventListener(event, startAudio, { once: true });
     });
+    
+    // Also try to start audio after a delay if no user interaction
+    setTimeout(() => {
+        if (!audioStarted) {
+            startAudio();
+        }
+    }, 3000);
 }
 
 // Handle mobile swipe gestures
